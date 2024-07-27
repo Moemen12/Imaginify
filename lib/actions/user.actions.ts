@@ -5,7 +5,6 @@ import { revalidatePath } from "next/cache";
 import { handleError } from "../utils";
 import { connectToDatabase } from "../database";
 import User from "../database/models/users.model";
-import { CreateUserParams, UpdateUserParams } from "@/types/index-d";
 
 // CREATE
 export async function createUser(user: CreateUserParams) {

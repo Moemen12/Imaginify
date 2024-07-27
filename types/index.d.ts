@@ -1,9 +1,7 @@
 /* eslint-disable no-unused-vars */
 
-import { IImage } from "@/lib/database/models/image.model";
-
 // ====== USER PARAMS
-export declare type CreateUserParams = {
+declare type CreateUserParams = {
   clerkId: string;
   email: string;
   username: string;
@@ -12,7 +10,7 @@ export declare type CreateUserParams = {
   photo: string;
 };
 
-export declare type UpdateUserParams = {
+declare type UpdateUserParams = {
   firstName: string;
   lastName: string;
   username: string;
@@ -29,7 +27,7 @@ declare type AddImageParams = {
     height: number;
     config: any;
     secureURL: string;
-    transformationURL: string;
+    transformationUrl: string;
     aspectRatio: string | undefined;
     prompt: string | undefined;
     color: string | undefined;
@@ -48,7 +46,7 @@ declare type UpdateImageParams = {
     height: number;
     config: any;
     secureURL: string;
-    transformationURL: string;
+    transformationUrl: string;
     aspectRatio: string | undefined;
     prompt: string | undefined;
     color: string | undefined;
@@ -98,7 +96,7 @@ declare type TransformationTypeKey =
   | "removeBackground";
 
 // ====== URL QUERY PARAMS
-export declare type FormUrlQueryParams = {
+declare type FormUrlQueryParams = {
   searchParams: string;
   key: string;
   value: string | number | null;
@@ -110,7 +108,7 @@ declare type UrlQueryParams = {
   value: string | null;
 };
 
-export declare type RemoveUrlQueryParams = {
+declare type RemoveUrlQueryParams = {
   searchParams: string;
   keysToRemove: string[];
 };
